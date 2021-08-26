@@ -38,15 +38,10 @@ p {
 @media only screen and (max-width: 620px){
   h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 490px) {
-  h1 {
-    margin: 0;
-    font-size: 1.7rem;
-    font-weight: 600;
-  }
   p {
     margin: 5px 0;
   }
