@@ -1,0 +1,25 @@
+.my-bar {
+  position: absolute;
+  width: 60%;
+  top: 58%;
+  left: 18%;
+  color: black;
+  font-size: 1.3em;
+}
+.my-bar button {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  height: 50px;
+  width: 50px;
+  max-height: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.my-bar button:hover{
+  background-color:black;
+  color: aliceblue;
+} 

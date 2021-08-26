@@ -1,0 +1,59 @@
+.search-bar {
+  background: rgba(244, 9, 9, 0.1);
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.search-bar img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.content {
+  position: absolute;
+  top: 26%;
+  left: 18%;
+}
+p {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.position-bar {
+  position: absolute;
+  top: 99%;
+  width: 100%;
+  height: 10%;
+}
+@media only screen and (max-width: 620px){
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 490px) {
+  h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-height: 667px) and (max-width:750px)   {
+  .search-bar {
+    height: 70vh;
+  }
+}
