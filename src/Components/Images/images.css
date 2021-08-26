@@ -45,7 +45,7 @@
 @media only screen and (max-width: 620px) {
   .image-block {
     margin-left: 0px;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -55,4 +55,3 @@
        height: 350px;
     }
   }
-  /* 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 */

@@ -23,3 +23,14 @@
   background-color:black;
   color: aliceblue;
 } 
+
+@media only screen and (max-width: 620px) {
+  .my-bar {
+    position: absolute;
+    width: 70%;
+    top: 58%;
+    left: 10%;
+    color: black;
+    font-size: 1.3em;
+  }
+}
