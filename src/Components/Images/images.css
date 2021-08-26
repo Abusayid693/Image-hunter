@@ -45,6 +45,7 @@
 @media only screen and (max-width: 620px) {
   .image-block {
     margin-left: 0px;
+    width: 90%;
   }
 }
 
