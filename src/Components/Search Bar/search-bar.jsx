@@ -138,7 +138,7 @@ export default function Bar(props) {
           value={value}
         />
       </div>
-      <button onClick={handleClick} style={{ height: barHeight },buttonStyle}>
+      <button onClick={handleClick} style={Object.assign({ height: barHeight }, buttonStyle)} >
         <i className="fa-2x fas fa-search"></i>
       </button>
     </div>
