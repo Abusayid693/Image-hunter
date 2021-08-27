@@ -1,5 +1,5 @@
 # Task-2
-
+## Thie app is designed in simplistic UI 
 > Pixel API has limit of 200 images/hr if it crosses the limit it may throw error
 
 ### 1.General UI (Grid layout)
