@@ -1,23 +1,23 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./images.css";
 
 export default function ImageRender(props) {
   const [color, setColor] = useState("rgb(185, 185, 185)");
   const [like, setLike] = useState(false);
-  const [height,setHeight]=useState("300px")
+  const [height, setHeight] = useState("300px");
 
   useEffect(() => {
-    setHeight(SetImageBlockHeight(props.data.height))
+    setHeight(SetImageBlockHeight(props.data.height));
   }, []);
 
-// Normalizing image height for better user experience
+  // Normalizing image height for better user experience
   const SetImageBlockHeight = (i) => {
     const a = i - 200,
       b = 10000 - 200,
-      c =a/b,
-      d=300;
+      c = a / b,
+      d = 300;
 
-    return c*d+300+"px";
+    return c * d + 300 + "px";
   };
 
   const handleLikeButton = () => {
@@ -35,7 +35,10 @@ export default function ImageRender(props) {
   };
 
   return (
-    <div className="image-block" style={{ backgroundColor: props.loading,height: height  }}>
+    <div
+      className="image-block"
+      style={{ backgroundColor: props.loading, height: height }}
+    >
       <img src={props.data.src.medium} />
       <button
         className="btn1"

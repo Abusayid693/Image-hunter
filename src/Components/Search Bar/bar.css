@@ -20,14 +20,14 @@
 }
 .my-bar button:hover{
   background-color:black;
-  color: aliceblue;
+  color: white;
 } 
 
 @media only screen and (max-width: 620px) {
   .my-bar {
     position: absolute;
     width: 70%;
-    top: 5%;
+    top: 10%;
     left: 10%;
     color: black;
     font-size: 1.3em;
