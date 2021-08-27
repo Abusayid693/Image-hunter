@@ -7,10 +7,12 @@ import "./app.css";
 
 function App() {
   const [images, setImages] = useState([
-    { src: { medium: "https://i.imgur.com/07t6nFn.png" } }, { src: { medium: "https://i.imgur.com/07t6nFn.png" } }, { src: { medium: "https://i.imgur.com/07t6nFn.png" } },
+    { src: { medium: "https://images.pexels.com/photos/4473405/pexels-photo-4473405.jpeg" } }, 
+    { src: { medium: "https://images.pexels.com/photos/4473405/pexels-photo-4473405.jpeg" } }, 
+    { src: { medium: "https://images.pexels.com/photos/4473405/pexels-photo-4473405.jpeg" } },
   ]);
   const [loading, setLoading] = useState(false);
-  const [numOfImages, setnumOfImages] = useState(3);
+  const [numOfImages, setnumOfImages] = useState(12);
 
   const LoadingContextValue = { loading, setLoading };
   const ImageContextValue = { images, setImages };

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import ReactSearchBox from "react-search-box";
-import "./bar.css";
 import { createClient } from "pexels";
+import "./bar.css";
 
 const client = createClient(
   "563492ad6f917000010000011ffb610fd92b41f28bd21dd826ae5947"
@@ -9,11 +9,7 @@ const client = createClient(
 
 // CONTEXT API
 const ImageContext = React.createContext({
-  images: [
-    { src: { medium: "https://i.imgur.com/07t6nFn.png" } },
-    { src: { medium: "https://i.imgur.com/07t6nFn.png" } },
-    { src: { medium: "https://i.imgur.com/07t6nFn.png" } },
-  ],
+  images: [],
   setImages: () => {},
 });
 
@@ -22,8 +18,12 @@ const LoadingContext = React.createContext({
   setLoading: () => {},
 });
 
+
+
+
+
 export default function Bar(props) {
-  const [value, setValue] = useState("random");
+  const [value, setValue] = useState("boy");
   const [num, setNum] = useState(props.numOfImages);
 
   const { padding, setImages } = useContext(ImageContext);
@@ -38,7 +38,7 @@ export default function Bar(props) {
   useEffect(() => continueRender(props.numOfImages), [props.numOfImages]);
 
   const continueRender = (num) => {
-    setNum(num);
+    setNum(num+9);
     handleClick();
   };
 
@@ -46,6 +46,7 @@ export default function Bar(props) {
   const handleClick = () => {
     setLoading("rgb(245, 241, 241)");
     const query = value;
+    console.log(query)
     client.photos.search({ query, per_page: num }).then((photos) => {
       setImages(photos.photos);
       console.log(photos.photos);
@@ -59,6 +60,7 @@ export default function Bar(props) {
     function handlePress(e) {
       if (e.which === 13) {
         handleClick();
+        e.preventDefault();
       }
     }
   };
@@ -84,7 +86,7 @@ export default function Bar(props) {
     {
       key: "Bike",
       value: "Bike",
-    },
+    }
   ];
 
   return (

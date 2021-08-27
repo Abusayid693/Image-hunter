@@ -3,12 +3,14 @@
   width: 400px;
   height: 300px;
   display: inline-block;
+  vertical-align: middle;
   margin-left: 30px;
   transition: 0.2s;
   margin-top: 10px;
+  cursor: zoom-in;
 }
 .image-block:hover {
-  background: rgba(36, 36, 36, 0.1);
+  background: rgba(29, 29, 29, 0.3);
 }
 .image-block:hover button {
   opacity: 1;
