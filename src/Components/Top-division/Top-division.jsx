@@ -7,7 +7,6 @@ import CircularIndeterminate from "../Loader/loader";
 /* these */
 const style1 = {
   backgroundColor: "white",
-
   height: "10vh",
   width: "100%",
   position: "fixed",
@@ -37,7 +36,7 @@ function MySearchBar(props) {
   // style={{ background: color}}
 
   return (
-    <div className="search-bar" style={color}>
+    <div className="top-div" style={color}>
       <div className="content" style={{ display: display }}>
         <h1>Search from 1000+ images</h1>
 
