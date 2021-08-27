@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import "./images.css";
 
 export default function ImageRender(props) {
-  const [color, setColor] = useState("black");
+  const [color, setColor] = useState("rgb(185, 185, 185)");
   const [like, setLike] = useState(false);
   const [height,setHeight]=useState("300px")
 
@@ -22,7 +22,7 @@ export default function ImageRender(props) {
 
   const handleLikeButton = () => {
     if (like) {
-      setColor("black");
+      setColor("rgb(185, 185, 185)");
       setLike(false);
     } else {
       setColor("rgb(238, 28, 109)");

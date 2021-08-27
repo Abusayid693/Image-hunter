@@ -28,7 +28,7 @@
 
 .image-block button {
   padding: 5.5px;
-  border: none;
+  border: 1px solid rgb(180, 178, 178);
   position: absolute;
   border-radius: 3px;
   cursor: pointer;
@@ -48,7 +48,20 @@
   .image-block {
     margin-left: 0px;
     width: 100%;
+    margin-bottom: 50px;
   }
+  .btn1{
+    right: 2px;
+    top: 101%;
+}
+
+.btn2{
+    right: 40px;
+    top: 101%;
+}
+.image-block button {
+  opacity: 1;
+}
 }
 
 @media only screen and (max-width: 1282px) and (min-width:1063px) {
