@@ -27,9 +27,10 @@
   .my-bar {
     position: absolute;
     width: 70%;
-    top: 58%;
+    top: 5%;
     left: 10%;
     color: black;
     font-size: 1.3em;
+    border-radius: 12px;
   }
 }

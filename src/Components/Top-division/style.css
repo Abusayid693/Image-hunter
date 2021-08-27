@@ -49,6 +49,10 @@ p {
     font-size: 1.3rem;
     font-weight: 400;
   }
+  .search-bar {
+    height: 30vh;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 310px){
   h1 {
